@@ -42,6 +42,10 @@ function toggleMenuShoppingCar() {
     menuDetailsCar.classList.toggle('inactive');
 }
 
+function openProductDetailAside(){
+    
+}
+
 const productList = [];
 
 productList.push({
@@ -93,6 +97,7 @@ function renderProducts(arr){
     
         const productImg = document.createElement('img');
         productImg.setAttribute('src',product.image);
+        productImg.addEventListener('click',openProductDetailAside);
     
     
         const productInfo = document.createElement('div');
